@@ -33,4 +33,10 @@ body {
   button:hover {
     background-color: #333;
   }
+  footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+  }
+
   
