@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Page 3</h1>
+    <label for="Number">Entrer Un Nombre : </label>
+    <input type="number" id="Number" name="Number" required>
+    <button id="suivant" onclick="suivant()">Suivant</button>
+    <script>
+        function suivant() {
+            const number = document.getElementById("Number").value;
+            if (number) {
+                localStorage.setItem("number3", number);
+                window.location.href = "page4.html";
+            } else {
+                alert("Veuillez entrer un nombre valide.");
+            }
+        }
+    </script>
+</body>
+</html>

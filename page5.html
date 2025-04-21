@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Page 5</h1>
+    <p id="resultat"></p>
+    <script>
+        const number1 = parseFloat(localStorage.getItem("number1"));
+        const number2 = parseFloat(localStorage.getItem("number2"));
+        const number3 = parseFloat(localStorage.getItem("number3"));
+        const number4 = parseFloat(localStorage.getItem("number4"));
+        const resultat = number1 + number2 + number3 + number4;
+        document.getElementById("resultat").innerHTML = "La Somme Des 4 Nombres Est : " + resultat;
+        localStorage.clear();
+    </script>
+</body>
+</html>
