@@ -8,6 +8,7 @@
 </head>
 <body>
     <h1>Page 5</h1>
+    <h1 id="average"></h1>
     <p id="resultat"></p>
     <script>
         const number1 = parseFloat(localStorage.getItem("number1"));
@@ -17,6 +18,8 @@
         const resultat = number1 + number2 + number3 + number4;
         document.getElementById("resultat").innerHTML = "La Somme Des 4 Nombres Est : " + resultat;
         localStorage.clear();
+        const average = resultat / 4;
+        document.getElementById("average").innerHTML = "La Moyenne Des 4 Nombres Est : " + average;
     </script>
 </body>
 </html>
